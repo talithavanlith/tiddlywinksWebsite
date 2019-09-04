@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!-- COMP112 Assignment Talitha van Lith May 2017 Student ID: vanta342 8078082-->
+		<title>Otago Tiddlywinks</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+	<!-- Start of University of Otago Tiddlywinks page header -->
+		<div class="header_group">
+			<figure>
+				<img class="header" src="./images/logo.gif" alt="University of Otago">
+			</figure>
+			<h1>Tiddlywinks Club</h1>
+			<figure>
+				<img class="header" src="./images/crest.gif" alt="University of Otago crest">
+			</figure>
+		</div>
+	<!-- End of University of Otago Tiddlywinks page header -->
+		<nav>
+			<ul class="nav">
+				<li class="button"><a href="./index.html">Home</a>
+				</li>
+				<li class="button"><a href="./about.html">About</a>
+				</li>
+				<li class="button"><a href="./howtoplay.html">How to play</a>
+				</li>
+				<li class="button"><a href="./rankings.html">Rankings</a>
+				</li>
+				<li class="button"><a class="active">Contact us</a>
+				</li>
+			</ul>
+		</nav>
+		<section>
+			<h2>Contact us</h2>
+			<h4>If you are interested in joining the Otago Tiddlywinks Club or want to find out more, please fill out the form below:</h4>
+			<!-- Start of "contact us" form -->
+			<form method="post" enctype="application/x-www-form-urlencoded" action="http://www.cs.otago.ac.nz/112bin/112formslab.cgi">
+				<fieldset id="textInputs">
+					<legend>Contact Details</legend>
+					<ul>
+						<li>
+							<label for="firstname">First Name(s):</label>
+							<input type="text" id="firstname" name="firstname" placeholder="Please enter your first name(s)" required>
+						</li>
+						<li>
+							<label for="surname">Surname:</label>
+							<input type="text" id="surname" name="surname" placeholder="Please enter your surname" required>
+						</li>
+						<li>
+							<label for="sender">Email Address:</label>
+							<input type="email" id="sender" name="sender" placeholder="Please enter your email address" required>
+						</li>
+						<li>
+							<label for="cellphone">Cell Phone:</label>
+							<input type="text" id="cellphone" name="cellphone" placeholder="Please enter your cell phone number" required pattern="[0-9 ()-]+">
+						</li>
+						<li>
+							<label for="homephone">Home Phone:</label>
+							<input type="text" id="homephone" name="homephone" placeholder="Please enter your home phone number" pattern="[0-9 ()-]+">
+						</li>
+						<li>
+							<label for="dob">Date of Birth:</label>
+							<input type="date" id="dob" name="dob" max="2017-01-01" required>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset class="radio_buttons">
+					<legend>Are you currently studying at the University of Otago?</legend>
+					<ul>
+						<li>
+							<label for="yes_study">Yes</label>
+							<input type="radio" id="yes_study" name="study" value="yes_study" required>
+						</li>
+						<li>
+							<label for="no_study">No</label>
+							<input type="radio" id="no_study" name="study" value="no_study" required>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>How would you rate your previous Tiddlywink experience?</legend>
+					<ul>
+						<li><input type="range" id="experience" name="experience" class="comments"></li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Comments</legend>
+					<textarea cols="100" rows="4" id="comments" placeholder="Please enter any comments here" name="comments" class="comments"></textarea>
+				</fieldset>
+			<!-- Submit and reset buttons -->
+				<fieldset class="buttons">
+					<ul>
+						<li><input type="submit" name="button" value="Submit"></li>
+						<li><input type="reset" value="Reset"></li>
+					</ul>
+				</fieldset>
+			<!-- Details on form sender, subject and follow up page -->
+				<fieldset class="invisible">
+					<input type="hidden" name="recipient" value="vanta342@student.otago.ac.nz">
+					<input type="hidden" name="subject" value="Tiddlywinks Club Interest">
+					<input type="hidden" name="followup-page" value="http://www.cs.otago.ac.nz/comp112/followup.html">
+				</fieldset>
+			</form>
+		</section>
+		<footer>
+			<p>~~ This website was created for a University project. The content is largely fictional and no services are actually being offered ~~
+			</p>
+		</footer>
+	</body>
+</html>

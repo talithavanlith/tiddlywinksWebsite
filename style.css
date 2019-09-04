@@ -1,0 +1,333 @@
+/* A style sheet for "A Guide to High Quality Web Development" website */
+/* Created by Talitha van Lith, Apr 2017 */
+/* margin/padding: top right bottom left;*/
+/*https://www.flickr.com/photos/dccarchives/20757033051 image of old clock tower website*/
+/*http://i.vimeocdn.com/video/517434288_1280x720.jpg image of Otago logo*/
+
+html{
+	background-color: rgb(240, 255, 202);
+	color: rgb(19, 60, 172);
+}
+
+/* Specifications of website background*/
+body{
+	background-color: rgb(204, 204, 204);
+	color: inherit;
+	font-family: ariel, sans-serif;
+    text-align:left;
+	min-height: 400px;
+	width: 1000px;
+	padding: 0px;
+	margin-left:auto;	margin-right:auto;
+}
+
+section{
+	padding: 60px 40px 30px 60px;
+}
+
+/* Page header specifications */
+.header_group{
+	background-color: rgb(255, 202, 99);
+	width: 1000px;
+	height: 100px;
+	position: fixed;
+    top: 0px;
+	margin: 0px;
+	padding: 0px 0 0 0;
+	color: inherit;
+}
+
+h1{
+	color: rgb(19, 60, 172);
+	background-color: rgb(255, 202, 99);
+	font-family: ariel, sans-serif;
+	font-size: 45px;
+	float: left;
+	margin: 0px;
+	padding: 25px 0 0 65px;
+	
+}
+
+.header{
+	float: left;
+	padding: 5px 0px 0 80px;
+	margin: 0px;
+}
+/* Page header finishes */
+
+/* navigation */
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(207, 247, 111);
+	color: rgb(71, 109, 213);
+	position: fixed;
+    top: 100px;
+}
+
+li.button {
+    float: left;
+	width: 200px;
+}
+
+li a {
+    display: block;
+    color: rgb(71, 109, 250);
+	background-color: inherit;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	font-weight: bold;
+	font-size: 19px;
+}
+
+/* Change the link color to light green on hover */
+li a:hover:not(.active) {
+    background-color: rgb(207, 255, 170);
+	color: rgb(71, 109, 213);
+}
+
+/* Change the active link to be grey */
+.active {
+    background-color: rgb(204, 204, 204);
+	color: rgb(71, 109, 213);
+}
+/* navigation finish */
+
+h2{
+	color: inherit;
+	background-color:inherit;
+	text-align:left;
+	font-family: ariel, sans-serif;
+	clear:left;
+	margin: 130px 0 0 0;
+	font-size: 35px;
+}
+
+h3{
+	color: rgb(19, 60, 172);
+	background-color: rgb(255, 202, 99);
+	text-align: center;
+	font-family: ariel, sans-serif;
+	font-size: 25px;
+	border: 10px solid rgb(207, 247, 111);
+	padding: 10px 0 5px 0px;
+	margin: 40px 0 40px 0;
+	width: 320px;
+}
+
+/* Image and text layout on "index.html" page */
+
+.dates{
+	padding: 0px;
+	margin: 0px;
+}
+
+div{
+	float: left;
+	margin: 0px 0px 0px 0px;
+	padding: 20px 0px 50px 0px;
+	width: 550px;
+	text-align: center;
+}
+
+.calendar h3{
+	width: 320px;
+	margin: 80px 0px 20px 105px;
+	font-size: 28px;
+}
+
+.counters_img{
+	float: left;
+	margin:60px 0px 20px 60px;
+}
+/* Image and text layout on "index.html" page finish*/
+
+/* Image and text layout on "about.html" page */
+
+.float_left{
+	float: left;
+	margin: 0px;
+	padding: 0 0 60px 0px;
+}
+
+#text_counters2{
+	margin: 0 0px 0 0px;
+	padding: 0px;
+	width: 550px;
+}
+
+#text_otago{
+	margin: 50px 0px 0 0px;
+	padding: 0px;
+	width: 600px;
+}
+
+#counters2{
+	margin: 0 0px 0 30px;
+	padding: 0px;
+}
+
+#otago{
+	margin: 50px 50px 0 20px;
+	padding: 0px;
+}
+
+img.border{
+	border: 5px solid rgb(19, 60, 172);
+	padding: 0px;
+	margin: 0px;
+}
+
+
+figure{
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Image and text layout on "about.html" page finish*/
+
+p{
+    padding-top: 20px;
+    margin: 0;
+	color: inherit;
+	background-color: inherit;
+}
+
+/* Table layout on "rankings.html" page */
+table{
+	border-collapse: collapse;
+	margin: 30px 0 30px 0;
+}
+
+table, th, td {
+	padding: 2px 0px 2px 5px;
+}
+
+tr:nth-child(odd) {
+	background-color: rgb(225, 225, 225);
+	color: inherit;
+}
+
+.small{
+	width: 80px;
+}
+
+td{
+	width:180px;
+}
+
+th{
+	height: 50px;
+	text-align: left;
+}
+/* Table layout on "rankings.html" page finish*/
+
+/* Form layout on "contactus.html" page */
+fieldset{
+	border: 2px solid rgb(19, 60, 172);
+	margin: 20px 150px 20px 60px;
+	padding-top: 20px;
+	width: 750px;
+}
+
+legend{
+	background-color: rgb(255, 202, 99);
+	color: inherit;
+	border: 5px solid rgb(207, 247, 111);
+	padding: 4px;
+	margin: 0px;
+	font-weight: bold;
+}
+
+fieldset ul{
+	padding: 0 0px 15px 50px;
+	list-style-type: none;
+}
+
+#textInputs label{
+	float: left;
+	width: 150px;
+	margin: 10px 0 0 50px;
+	height: 20px;
+}
+
+#textInputs input{
+	float: left;
+	width: 250px;
+	height: 20px;
+	margin: 10px 0 0 50px;
+}
+
+#textInputs li{
+	clear: both;
+	height: 1.5em;
+	margin-bottom: 10px;
+}
+
+.comments{
+	margin-left: 60px;
+}
+
+.radio_buttons li{
+	float: left;
+	padding: 0 120px 20px 50px;
+}
+
+input[type]{
+	outline: none;
+}
+
+input[type]:focus {
+    border: 1.5px solid rgb(19, 60, 172);
+}
+
+.buttons li{
+	float: right;
+	margin: 0 40px 20px 0px;
+}
+
+.buttons input{
+	font-size: 15px;
+	color: rgb(19, 60, 132);
+	background-color: white;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 2px solid rgb(19, 60, 132);
+}
+
+/* Change the link color to light green on hover */
+.buttons input:hover {
+    background-color: rgb(19, 60, 132);
+	color: white;
+}
+
+/* Form layout on "contactus.html" page finish*/
+
+.invisible{
+	display: none;
+}
+
+footer{
+	width: 1000px;
+	height: 30px;
+	padding: 3px 0 0px 0;
+	margin: 0px;
+	text-align: center;
+	color: rgb(19, 60, 172);
+	background-color: rgb(255, 202, 99);
+	clear: left;
+}
+
+.last_p{
+	padding-bottom: 20px;
+}
+
+footer p{
+	clear: left;
+	padding: 5px 0px 0px 0px;
+	margin: 0px;
+}
+
